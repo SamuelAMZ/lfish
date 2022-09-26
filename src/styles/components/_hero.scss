@@ -23,6 +23,8 @@
   }
   @include b.breakpoint("700") {
     padding: 1rem;
+    min-height: 600px;
+    max-height: 80vh;
   }
 
   .hero1 {
@@ -50,8 +52,8 @@
         line-height: 1.2;
       }
       @include b.breakpoint("700") {
-        font-size: 39px;
-        line-height: 1.6;
+        font-size: 35px;
+        line-height: 1.4;
       }
     }
   }
