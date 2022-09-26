@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1.5rem;
 
   @include b.breakpoint("1340") {
     padding: 0 2rem;
