@@ -16,8 +16,8 @@ const SectionA = () => {
           Principal acteur dans la production d'aliments pour poissons d'élevage
         </h2>
         <h3>
-          Nous somme une compagnie Togolaise créative et innovante de production
-          locale de nourriture pour poissons
+          Nous sommes une compagnie Togolaise créative et innovante de
+          production locale de nourriture pour poissons
         </h3>
         <div>
           <button>Nous contacter</button>

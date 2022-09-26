@@ -31,8 +31,8 @@ const SectionB = () => {
           <h2>Recherche et développement</h2>
           <h3>
             Chez L'Fish, nous sommes passionnés par l'innovation. Notre objectif
-            ultime est de voir la recherche que nous menons mise en œuvre dans
-            des solutions innovantes et durables pour l'industrie de
+            ultime est de voir la recherche que nous menons porter à une mise en
+            œuvre des solutions innovantes et durables pour l'industrie de
             l'aquaculture.
           </h3>
           <div>
