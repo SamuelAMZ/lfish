@@ -31,10 +31,11 @@ const SectionB = () => {
           <div className="line"></div>
           <h2>Recherche et développement</h2>
           <h3>
-            Chez L'Fish, nous sommes passionnés par l'innovation. Notre objectif
-            ultime est de voir la recherche que nous menons porter à une mise en
-            œuvre des solutions innovantes et durables pour l'industrie de
-            l'aquaculture.
+            La recherche et le développement sur les meilleures matières
+            premières et les mécanismes de durabilité sont au cœur de la
+            production d'aliments de qualité pour le bonheur des consommateurs
+            que vous êtes. Ensemble pour créer, nous opérons pour une entreprise
+            responsable et durable.
           </h3>
           <div>
             <NavLink to="/activite">

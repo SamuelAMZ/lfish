@@ -14,10 +14,11 @@ const NousComps = () => {
           <h2>Mission</h2>
           <div className="line2"></div>
           <h3>
-            C'est avec passion, et méticulosité que L'fish assure le
-            développement d'un vaste assortiment d'aliments de qualité pour
-            poissons . Nous vous proposons d'être votre expert en alimentation
-            des poissons et développons nos services en fonction de vos bésoins.
+            L'fish produit une large gamme d'aliments de qualité pour être au
+            service des pisciculteurs au Togo et combler le vide de besoin en
+            Aliments approprié pour leur poisson d'élevage. La proximité,
+            l'assistance et le conseil est au coeur des services rendus au
+            clients pour satisfaire leur besoin et attentes.
           </h3>
         </motion.div>
         <div className="illustration">
