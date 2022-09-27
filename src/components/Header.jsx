@@ -43,8 +43,10 @@ const Header = () => {
     window.onscroll = () => scrollFunction();
   }, [topNow]);
 
+  // automatic scroll to top on each component mont
   useEffect(() => {
-    scrollToTop();
+    const topElm = document.querySelector(".header");
+    topElm.scrollIntoView({ behavior: "auto", block: "end" });
   }, []);
 
   // side menu
