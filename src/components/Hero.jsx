@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -31,13 +32,15 @@ const Hero = () => {
           besoin
         </h2>
       </motion.div>
-      <motion.button
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.2 }}
-      >
-        En savoir plus
-      </motion.button>
+      <NavLink to="/nous">
+        <motion.button
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.2 }}
+        >
+          En savoir plus
+        </motion.button>
+      </NavLink>
     </div>
   );
 };

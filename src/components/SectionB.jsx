@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const SectionB = () => {
   return (
@@ -10,7 +11,7 @@ const SectionB = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            src="./img/actuals/cereal.jpg"
+            src="./img/actuals/cereal2.jpg"
             alt="cereal"
           />
           <motion.div
@@ -36,7 +37,9 @@ const SectionB = () => {
             l'aquaculture.
           </h3>
           <div>
-            <button>Nous contacter</button>
+            <NavLink to="/activite">
+              <button>En savoir plus</button>
+            </NavLink>
           </div>
         </motion.div>
       </div>

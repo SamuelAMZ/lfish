@@ -44,6 +44,16 @@
         margin-bottom: 1rem;
       }
     }
+    .line2 {
+      @include line;
+      margin-bottom: 2rem;
+      margin-top: -1.4rem;
+
+      @include b.breakpoint("1000") {
+        margin-bottom: 1rem;
+        margin-top: -0.5rem;
+      }
+    }
 
     h2 {
       font-size: 35px;

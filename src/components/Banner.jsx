@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TbFish } from "react-icons/tb";
 import { GiClownfish } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -22,13 +23,15 @@ const Banner = () => {
         la qualité de l'alimentation
       </motion.h3>
       <div>
-        <motion.button
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          Nous contacter
-        </motion.button>
+        <NavLink to="/contact">
+          <motion.button
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            Nous contacter
+          </motion.button>
+        </NavLink>
       </div>
 
       <motion.div

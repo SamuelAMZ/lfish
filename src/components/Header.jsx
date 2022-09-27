@@ -43,6 +43,10 @@ const Header = () => {
     window.onscroll = () => scrollFunction();
   }, [topNow]);
 
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   // side menu
   const SideMenu = () => {
     return (

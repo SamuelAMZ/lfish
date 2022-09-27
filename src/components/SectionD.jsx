@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const SectionD = () => {
   return (
@@ -19,7 +20,9 @@ const SectionD = () => {
           entreprises dans la réussite de leurs activités piscicoles.
         </h3>
         <div>
-          <button>Contact</button>
+          <NavLink to="/activite">
+            <button>En savoir plus</button>
+          </NavLink>
         </div>
       </motion.div>
       <div className="illustration">

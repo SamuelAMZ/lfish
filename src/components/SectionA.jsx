@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const SectionA = () => {
   return (
@@ -16,11 +17,14 @@ const SectionA = () => {
           Principal acteur dans la production d'aliments pour poissons d'élevage
         </h2>
         <h3>
-          Nous sommes une compagnie Togolaise créative et innovante de
-          production locale de nourriture pour poissons
+          Produire sur place et fournir aux pisciculteurs de manière qualitative
+          les aliments flottants nécessaires aux différentes étapes de la vie
+          des poissons élevés à tout moment.
         </h3>
         <div>
-          <button>Nous contacter</button>
+          <NavLink to="/contact">
+            <button>Nous contacter</button>
+          </NavLink>
         </div>
       </motion.div>
       <div className="illustration">
