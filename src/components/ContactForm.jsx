@@ -19,7 +19,8 @@ const ContactForm = () => {
       const url = "/.netlify/functions/contact";
 
       const sending = await fetch(url);
-      const dataBack = await sending.json();
+      console.log(sending);
+      const dataBack = await sending.text();
 
       console.log(dataBack);
     } else {
