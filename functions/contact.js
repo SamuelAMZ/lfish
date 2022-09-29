@@ -1,10 +1,12 @@
 const axios = require("axios");
 
 exports.handler = async (event, context) => {
-  const headers = {
-    "Content-Type": "application/json",
-    Authorization:
-      "Bearer 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",
+  let config = {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization:
+        "Bearer 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",
+    },
   };
 
   axios
@@ -13,15 +15,15 @@ exports.handler = async (event, context) => {
       {
         personalizations: [
           {
-            to: [{ email: "samueldev09@gmail.com", name: "John Doe" }],
+            to: [{ email: "samuelthedev09@gmail.com", name: "John Doe" }],
             subject: "Hello, World!",
           },
         ],
-        content: [{ type: "text/plain", value: "Heya!" }],
+        content: [{ type: "text/plain", value: "Heyad!" }],
         from: { email: "ticklme@tickl.ch", name: "lfish" },
         reply_to: { email: "ticklme@tickl.ch", name: "lfish reply" },
       },
-      { headers: headers }
+      config
     )
     .then(function (response) {
       console.log(response);
