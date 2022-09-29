@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
       {
         personalizations: [
           {
-            to: [{ email: "samuelthedev09@gmail.com", name: "John Doe" }],
+            to: [{ email: "samueldev09@gmail.com", name: "John Doe" }],
             subject: "Hello, World!",
           },
         ],

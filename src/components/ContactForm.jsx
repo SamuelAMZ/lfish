@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { motion } from "framer-motion";
+import axios from "axios";
+import { useLocation } from "react-router-dom";
 
 const ContactForm = () => {
+  const location = useLocation();
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -16,13 +19,29 @@ const ContactForm = () => {
     // validate values
     if (values.name && values.email && values.phone && values.message) {
       console.log("go");
-      const url = "/.netlify/functions/contact";
 
-      const sending = await fetch(url);
-      console.log(sending);
-      const dataBack = await sending.text();
+      let date = new Date();
+      let current_date =
+        date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
 
-      console.log(dataBack);
+      const url = "https://green-python-sock.cyclic.app/lfish/contact";
+      const data = {
+        name: values.name,
+        email: values.email,
+        phone: values.phone,
+        message: values.message,
+        page: location.pathname,
+        date: current_date,
+      };
+
+      axios
+        .post(url, data)
+        .then((res) => {
+          console.log(res.data.message);
+        })
+        .catch((err) => {
+          console.log(err.response.data.message);
+        });
     } else {
       console.log("verifiez les champs");
     }
