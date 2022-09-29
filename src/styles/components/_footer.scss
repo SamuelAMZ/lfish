@@ -2,87 +2,92 @@
 @import "../globals/variables";
 @import "../globals//mixins";
 
-.footer {
-  @include width2;
-  margin: 0.5rem auto;
-  padding: 4rem 0 0 0;
-  height: 350px;
+.footer-container {
+  background-color: white;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
-  gap: 2rem;
+  .footer {
+    @include width2;
 
-  @include b.breakpoint("1340") {
-    padding: 3rem 2rem;
-  }
-  @include b.breakpoint("1000") {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 0.2rem 2rem 11rem 2rem;
-  }
-  @include b.breakpoint("700") {
-    grid-template-columns: 1fr;
-    padding: 1.5rem 0;
+    margin: 0rem auto;
+    padding: 4rem 0 0 0;
+    height: 350px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
     gap: 2rem;
-    margin: 0.2rem 1rem 24rem 1rem;
-  }
-  // @include b.breakpoint("500") {
-  //   padding: 1rem 0;
-  // }
 
-  .first {
-    img {
-      margin-top: 5px;
-      width: 110px;
-      height: 80px;
-      object-fit: contain;
+    @include b.breakpoint("1340") {
+      padding: 3rem 2rem;
     }
-    p {
-      width: 70%;
-      line-height: 2;
-      margin-bottom: 1rem;
-    }
-    .socials {
-      display: flex;
-      align-items: center;
-      font-size: 25px;
+    @include b.breakpoint("1000") {
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
-      color: $primary;
-      cursor: pointer;
+      margin: 0.2rem 2rem 11rem 2rem;
+    }
+    @include b.breakpoint("700") {
+      grid-template-columns: 1fr;
+      padding: 1.5rem 0;
+      gap: 2rem;
+      margin: 0.2rem 1rem 24rem 1rem;
+    }
+    // @include b.breakpoint("500") {
+    //   padding: 1rem 0;
+    // }
 
-      a {
+    .first {
+      img {
+        margin-top: 5px;
+        width: 110px;
+        height: 80px;
+        object-fit: contain;
+      }
+      p {
+        width: 70%;
+        line-height: 2;
+        margin-bottom: 1rem;
+      }
+      .socials {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 1rem;
         color: $primary;
-        text-decoration: none;
+        cursor: pointer;
+
+        a {
+          color: $primary;
+          text-decoration: none;
+        }
       }
     }
-  }
 
-  .elm {
-    h4 {
-      font-size: 17px;
-      line-height: 2;
-      font-weight: 500;
-    }
+    .elm {
+      h4 {
+        font-size: 17px;
+        line-height: 2;
+        font-weight: 500;
+      }
 
-    .line {
-      @include line;
-      margin-bottom: 1rem;
-    }
+      .line {
+        @include line;
+        margin-bottom: 1rem;
+      }
 
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: black;
-          font-size: 17px;
-          &.active {
-            font-weight: 600;
-            color: $primary;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            &.active {
+              font-weight: 600;
+              color: $primary;
+            }
           }
         }
       }
