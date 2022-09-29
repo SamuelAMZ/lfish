@@ -16,7 +16,7 @@ exports.handler = async (event, context) => {
     () => {
       return {
         statusCode: 200,
-        body: JSON.stringify({ message: "successful" }),
+        body: "successful",
       };
     },
     (error) => {
@@ -26,7 +26,7 @@ exports.handler = async (event, context) => {
         console.error(error.response.body);
         return {
           statusCode: 400,
-          body: JSON.stringify({ message: error.response.body }),
+          body: error.response.body,
         };
       }
     }
