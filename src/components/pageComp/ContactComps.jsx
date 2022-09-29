@@ -19,36 +19,37 @@ const ContactComps = () => {
           <h2>Nous contacter</h2>
           <div className="line2"></div>
           <h3>
-            Lorem ipsum dolor sit amet conse adipisicing elit. Numquam, hic.
+            Vous pouvez nous contacter en utilisant nos informations de contact
+            ou en remplissant le formulaire suivant.
           </h3>
         </div>
         <div className="actual-info">
           <div className="item">
-            <a href="#">
+            <a href="tel:+22891789074">
               <MdOutlinePhone />
-              <p>12345789</p>
+              <p>+228 91 78 90 74</p>
             </a>
           </div>
           <div className="item">
-            <a href="#">
+            <a href="https://web.whatsapp.com/send?phone=+22891789074&text=Bonjour L'fish, je vous contacte depuis votre site web.">
               <BsWhatsapp />
-              <p>12345789</p>
+              <p>+228 91 78 90 74</p>
             </a>
           </div>
           <div className="item">
-            <a href="#">
+            <a href="mailto:lfish-cheznous@lfishtogo.com">
               <MdOutlineEmail />
-              <p>test@lfishtogo.com</p>
+              <p>lfish-cheznous@lfishtogo.com</p>
             </a>
           </div>
           <div className="item">
-            <a href="#">
+            <a href="https://lfishtogo.com">
               <TbWorld />
               <p>lfishtogo.com</p>
             </a>
           </div>
           <div className="item">
-            <a href="#">
+            <a href="https://facebook.com">
               <FaFacebookF />
               <p>Facebook</p>
             </a>

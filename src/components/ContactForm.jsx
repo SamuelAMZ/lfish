@@ -7,6 +7,8 @@ import { useLocation } from "react-router-dom";
 
 const ContactForm = () => {
   const location = useLocation();
+
+  const [isLoading, setIsLoading] = useState(false);
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -16,6 +18,8 @@ const ContactForm = () => {
 
   const handleContact = async (e) => {
     e.preventDefault();
+    // load button
+    setIsLoading(true);
     // validate values
     if (values.name && values.email && values.phone && values.message) {
       console.log("go");
@@ -37,14 +41,51 @@ const ContactForm = () => {
       axios
         .post(url, data)
         .then((res) => {
-          console.log(res.data.message);
+          // console.log(res.data.message);
+          notification("Message Envoyé");
+          setIsLoading(false);
+          emptyFields();
         })
         .catch((err) => {
-          console.log(err.response.data.message);
+          // console.log(err.response.data.message);
+          notification(`Erreur ${err.response.data.message}`);
+          setIsLoading(false);
         });
     } else {
       console.log("verifiez les champs");
     }
+  };
+
+  const emptyFields = () => {
+    setValues({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
+
+  const notification = (text) => {
+    const header = document.querySelector(".header");
+
+    let notif = document.createElement("div");
+    notif.classList.add("notification");
+    notif.innerText = text;
+
+    header.appendChild(notif);
+
+    let top = 3;
+    Array.from(document.querySelectorAll(".notification")).forEach((not) => {
+      not.style.top = top + 5.5 + "%";
+      top = top + 5.5;
+    });
+
+    let indexRem = setTimeout(() => {
+      document.querySelector(".notification").remove();
+      if (!notif) {
+        clearTimeout(indexRem);
+      }
+    }, 7000);
   };
 
   return (
@@ -139,7 +180,8 @@ const ContactForm = () => {
             ></textarea>
           </div>
         </div>
-        <button>Envoyer</button>
+        {isLoading && <button disabled>En Cours ...</button>}
+        {!isLoading && <button>Envoyer</button>}
       </motion.form>
 
       <motion.div

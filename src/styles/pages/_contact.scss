@@ -90,7 +90,7 @@
           font-size: 27px;
           color: $primary;
           text-decoration: none;
-          text-transform: capitalize;
+          // text-transform: capitalize;
 
           @include b.breakpoint("1000") {
             font-size: 20px;
@@ -98,6 +98,7 @@
           p {
             font-size: 20px;
             color: black;
+            text-transform: none;
 
             @include b.breakpoint("1000") {
               font-size: 17px;
@@ -215,4 +216,18 @@
       // height: 400px;
     }
   }
+}
+
+/*  notifications */
+.notification {
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  padding: 1rem 1rem 0.7rem 1rem;
+  border-radius: 10px 10px 0 10px;
+  border-bottom: 0.3rem solid $primary;
+  z-index: 20000;
+  box-shadow: 0 0 12px 12px rgba(20, 20, 20, 0.09);
 }
