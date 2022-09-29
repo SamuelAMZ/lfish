@@ -26,14 +26,14 @@ exports.handler = async (event, context) => {
       config
     )
     .then(function (response) {
-      console.log(response);
+      console.log({ response, mes: "success" });
       return {
         statusCode: 200,
         body: JSON.stringify("success"),
       };
     })
     .catch(function (error) {
-      console.log(error);
+      console.log({ error, err: "erorrr" });
 
       return {
         statusCode: 400,
