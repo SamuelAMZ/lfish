@@ -1,31 +1,41 @@
-const sgMail = require("@sendgrid/mail");
+const axios = require("axios");
 
 exports.handler = async (event, context) => {
-  sgMail.setApiKey(
-    "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"
-  );
-
-  const msg = {
-    to: "samueldev09@gmail.com",
-    from: "ticklme@tickl.ch", // Use the email address or domain you verified above
-    subject: "Sending with Twilio SendGrid is Fun",
-    text: "and easy to do anywhere, even with Node.js",
-    html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+  const headers = {
+    "Content-Type": "application/json",
+    Authorization:
+      "Bearer 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",
   };
 
-  sgMail.send(msg).then(
-    () => {
+  axios
+    .post(
+      "https://api.sendgrid.com/v3/mail/send",
+      {
+        personalizations: [
+          {
+            to: [{ email: "samueldev09@gmail.com", name: "John Doe" }],
+            subject: "Hello, World!",
+          },
+        ],
+        content: [{ type: "text/plain", value: "Heya!" }],
+        from: { email: "ticklme@tickl.ch", name: "lfish" },
+        reply_to: { email: "ticklme@tickl.ch", name: "lfish reply" },
+      },
+      { headers: headers }
+    )
+    .then(function (response) {
+      console.log(response);
       return {
         statusCode: 200,
         body: JSON.stringify("success"),
       };
-    },
-    (error) => {
-      console.error(error);
+    })
+    .catch(function (error) {
+      console.log(error);
 
-      if (error.response) {
-        console.error(error.response.body);
-      }
-    }
-  );
+      return {
+        statusCode: 400,
+        body: JSON.stringify(error),
+      };
+    });
 };
