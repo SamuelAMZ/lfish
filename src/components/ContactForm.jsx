@@ -4,6 +4,7 @@ import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { motion } from "framer-motion";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ const ContactForm = () => {
     phone: "",
     message: "",
   });
+  const [captchaState, setCaptachaState] = useState(false);
 
   const handleContact = async (e) => {
     e.preventDefault();
@@ -22,37 +24,59 @@ const ContactForm = () => {
     setIsLoading(true);
     // validate values
     if (values.name && values.email && values.phone && values.message) {
-      console.log("go");
+      // check for captcha
+      if (captchaState) {
+        console.log("go");
 
-      let date = new Date();
-      let current_date =
-        date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+        let date = new Date();
+        let current_date =
+          date.getFullYear() +
+          "-" +
+          (date.getMonth() + 1) +
+          "-" +
+          date.getDate();
 
-      const url = "https://green-python-sock.cyclic.app/lfish/contact";
-      const data = {
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-        message: values.message,
-        page: location.pathname,
-        date: current_date,
-      };
+        const url = "https://green-python-sock.cyclic.app/lfish/contact";
+        const data = {
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+          captcha: captchaState,
+          page: location.pathname,
+          date: current_date,
+        };
 
-      axios
-        .post(url, data)
-        .then((res) => {
-          // console.log(res.data.message);
-          notification("Message Envoyé");
-          setIsLoading(false);
-          emptyFields();
-        })
-        .catch((err) => {
-          // console.log(err.response.data.message);
-          notification(`Erreur ${err.response.data.message}`);
-          setIsLoading(false);
-        });
+        console.log(data);
+
+        axios
+          .post(url, data)
+          .then((res) => {
+            // console.log(res.data.message);
+            notification("Message Envoyé");
+            setIsLoading(false);
+            emptyFields();
+          })
+          .catch((err) => {
+            // console.log(err.response.data.message);
+            notification(`Erreur ${err.response.data.message}`);
+            setIsLoading(false);
+          });
+      } else {
+        notification("verifiez captcha");
+        setIsLoading(false);
+      }
     } else {
-      console.log("verifiez les champs");
+      notification("verifiez les champs");
+      setIsLoading(false);
+    }
+  };
+
+  const handleCaptcha = (e) => {
+    if (e) {
+      setCaptachaState(e);
+    } else {
+      setCaptachaState(false);
     }
   };
 
@@ -180,6 +204,13 @@ const ContactForm = () => {
             ></textarea>
           </div>
         </div>
+        {/* captcha */}
+        <ReCAPTCHA
+          className="thecaptcha"
+          sitekey="6LepjkEiAAAAAIRJVxvsH0jMHKy2zxglStU0OHRi"
+          onChange={handleCaptcha}
+        />
+
         {isLoading && <button disabled>En Cours ...</button>}
         {!isLoading && <button>Envoyer</button>}
       </motion.form>

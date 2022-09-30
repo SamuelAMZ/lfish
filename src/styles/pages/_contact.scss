@@ -7,20 +7,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  padding: 7rem 0 15rem;
+  padding: 7rem 0 17rem;
 
   @include b.breakpoint("1340") {
     gap: 1.5rem;
-    padding: 3.5rem 3rem 10rem;
+    padding: 3.5rem 3rem 12rem;
   }
   @include b.breakpoint("1100") {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-bottom: 15rem;
+    padding-bottom: 20rem;
     gap: 3rem;
   }
   @include b.breakpoint("500") {
-    padding: 3.5rem 1.5rem 15rem;
+    padding: 3.5rem 1.5rem 20rem;
   }
 
   .infomations {
@@ -115,7 +115,7 @@
 
   form {
     width: 500px;
-    height: 550px;
+    height: 650px;
     background-color: white;
     padding: 2rem;
     border-radius: 20px;
@@ -134,6 +134,10 @@
     }
     @include b.breakpoint("700") {
       width: 100%;
+    }
+
+    .thecaptcha {
+      margin-top: 2rem;
     }
 
     .item {
@@ -192,7 +196,7 @@
 
     button {
       align-self: flex-end;
-      margin-top: 2rem;
+      margin-top: 1rem;
 
       @include button;
     }
@@ -201,7 +205,7 @@
   // anim
   .image {
     width: 500px;
-    height: 550px;
+    height: 650px;
     background-color: $primary;
     position: absolute;
     top: 0.8rem;
