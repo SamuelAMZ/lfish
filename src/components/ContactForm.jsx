@@ -47,8 +47,6 @@ const ContactForm = () => {
           date: current_date,
         };
 
-        console.log(data);
-
         axios
           .post(url, data)
           .then((res) => {
