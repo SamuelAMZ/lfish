@@ -49,6 +49,11 @@ const SectionB = () => {
         className="layer1"
         style={{ backgroundImage: "url(/img/layers/circle1.png)" }}
       ></div>
+
+      <div
+        className="layer2"
+        style={{ backgroundImage: "url(/img/layers/circle1.png)" }}
+      ></div>
     </div>
   );
 };

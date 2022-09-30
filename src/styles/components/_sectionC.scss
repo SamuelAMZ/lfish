@@ -121,21 +121,4 @@
       font-weight: 600;
     }
   }
-
-  .layer2 {
-    width: 150px;
-    height: 150px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-200%, 50%);
-
-    @include b.breakpoint("700") {
-      display: none;
-    }
-  }
 }

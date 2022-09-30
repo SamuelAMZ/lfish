@@ -46,11 +46,6 @@ const SectionC = () => {
           </div>
         </div>
       </motion.div>
-
-      <div
-        className="layer2"
-        style={{ backgroundImage: "url(/img/layers/circle1.png)" }}
-      ></div>
     </div>
   );
 };
