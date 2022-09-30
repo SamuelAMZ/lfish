@@ -19,33 +19,6 @@ const SectionC = () => {
           de la qualité de l'alimentation
         </h3>
       </motion.div>
-      <motion.div
-        className="elements"
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-      >
-        <div className="first elm">
-          <img src="./img/layers/grid.png" alt="grid" />
-          <div>
-            <p>Les espèces que nous nourrissons</p>
-            <p>Le tilapia est le sujet de notre spécialisation en ce moment </p>
-          </div>
-          <div>
-            <button>En savoir plus</button>
-          </div>
-        </div>
-        <div className="second elm">
-          <img src="./img/layers/cal.png" alt="cal" />
-          <div>
-            <p>Les espèces que nous nourrissons</p>
-            <p>Lspécialisation en ce moment </p>
-          </div>
-          <div>
-            <button>En savoir plus</button>
-          </div>
-        </div>
-      </motion.div>
     </div>
   );
 };

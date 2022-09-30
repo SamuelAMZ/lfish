@@ -33,10 +33,7 @@
     background-color: rgba(0, 82, 3, 0.399);
   }
 
-  h2 {
-    color: white;
-    font-size: 50px;
-    text-align: center;
+  .elm {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,9 +41,34 @@
     z-index: 2;
 
     @include b.breakpoint("700") {
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+    @include b.breakpoint("700") {
       font-size: 30px;
       line-height: 1;
       width: 100%;
+    }
+  }
+  h3 {
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 500;
+    display: block;
+    color: rgba(255, 255, 255, 0.566);
+    text-align: center;
+
+    @include b.breakpoint("1000") {
+      margin-top: 1rem;
+      font-size: 15px;
+      line-height: 1.7;
     }
   }
 }

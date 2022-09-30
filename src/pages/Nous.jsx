@@ -9,7 +9,13 @@ const Nous = () => {
   return (
     <>
       <Header />
-      <SmallHero heading={"Qui sommes nous?"} image={"/img/nous.jpg"} />
+      <SmallHero
+        heading={"Qui sommes nous?"}
+        image={"/img/nous.jpg"}
+        desc={
+          "Acteur clé dans la production des aliments pour les poissons d'élevage"
+        }
+      />
       <NousComps />
       <Banner />
       <Footer />

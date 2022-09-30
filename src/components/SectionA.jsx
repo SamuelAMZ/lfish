@@ -14,7 +14,7 @@ const SectionA = () => {
         <h4>Ce que nous offrons</h4>
         <div className="line"></div>
         <h2>
-          Principal acteur dans la production d'aliments pour poissons d'élevage
+          Acteur clé dans la production des aliments pour les poissons d’élevage
         </h2>
         <h3>
           Produire sur place et fournir aux pisciculteurs de manière qualitative
