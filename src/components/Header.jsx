@@ -13,11 +13,13 @@ const Header = () => {
   //   fixing little issue having with the duplicate active menu
   useEffect(() => {
     if (location.pathname !== "/") {
-      if (document.querySelector(".first").classList.contains("active")) {
-        document.querySelector(".first").classList.remove("active");
-      }
+      Array.from(document.querySelectorAll(".first")).forEach((item) => {
+        if (item.classList.contains("active")) {
+          item.classList.remove("active");
+        }
+      });
     }
-  }, [location]);
+  }, [location, menuOpen]);
 
   // on scroll menu animation
   const scrollFunction = () => {
