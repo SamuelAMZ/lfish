@@ -19,7 +19,7 @@ const Hero = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h1>Une large gamme d'aliments pour poissons d'élevage</h1>
+        <h1>Une large gamme d'aliments pour les poissons d'élevage</h1>
       </motion.div>
       <motion.div
         className="hero3"
@@ -27,7 +27,7 @@ const Hero = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <h2>Tellement bon, même les poissons le confirment</h2>
+        <h2>Tellement c'est bon, même les poissons le confirment</h2>
       </motion.div>
       <NavLink to="/nous">
         <motion.button

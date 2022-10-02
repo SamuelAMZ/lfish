@@ -11,7 +11,7 @@ const SectionB = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            src="./img/actuals/cage.jpg"
+            src="./img/actuals/activite2.jpg"
             alt="cereal"
           />
           <motion.div
@@ -31,9 +31,10 @@ const SectionB = () => {
           <div className="line"></div>
           <h2>Conseil et assistance</h2>
           <h3>
-            Dans le prolongement naturel de nos activités de provenderie et de
-            pisciculture, notre activité de conseil vise à accompagner les
-            entreprises dans la réussite de leurs activités piscicoles.
+            Dans le prolongement naturel de nos activités de nos activités de
+            production d'aliments, vous prodiguer des conseils, vous assister
+            pour une meilleure nutrition et alimentation de vos poissons est la
+            clé pour la réussite de votre activité piscicole.
           </h3>
           <div>
             <NavLink to="/activite">
