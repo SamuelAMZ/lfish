@@ -12,7 +12,7 @@ const Banner = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}
       >
-        Découvrez notre gamme d'aliment Tilapia Silure Carpe
+        Découvrez notre gamme d'aliments Tilapia Silures Carpes
       </motion.h2>
       <motion.h3
         initial={{ y: 100, opacity: 0 }}
