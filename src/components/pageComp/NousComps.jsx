@@ -11,7 +11,7 @@ const NousComps = () => {
           transition={{ duration: 0.8 }}
           className="texts"
         >
-          <h2>Mission</h2>
+          <h2>Notre Mission</h2>
           <div className="line2"></div>
           <h3>
             Avec une grande finesse et une attention soutenue, L’fish produit
@@ -35,8 +35,9 @@ const NousComps = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            src="./img/actuals/nous2.jpg"
+            src="./img/actuals/nousf.jpg"
             alt="tilapia"
+            className="carre"
           />
           <motion.div
             initial={{ opacity: 0, x: "-1rem" }}

@@ -11,7 +11,7 @@ const Hero = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}
       >
-        <h3>Bienvenu chez L'Fish</h3>
+        <h3>Bienvenue chez L'fish</h3>
       </motion.div>
       <motion.div
         className="hero2"
