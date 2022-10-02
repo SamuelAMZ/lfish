@@ -29,12 +29,12 @@ const SectionB = () => {
         >
           <h4>Expertise</h4>
           <div className="line"></div>
-          <h2>Conseil et assistance</h2>
+          <h2>Conseils et assistance</h2>
           <h3>
-            Dans le prolongement naturel de nos activités de nos activités de
-            production d'aliments, vous prodiguer des conseils, vous assister
-            pour une meilleure nutrition et alimentation de vos poissons est la
-            clé pour la réussite de votre activité piscicole.
+            Dans le prolongement naturel de nos activités de production
+            d'aliments, vous prodiguer des conseils, vous assister pour une
+            meilleure nutrition et alimentation de vos poissons est la clé pour
+            la réussite de votre activité piscicole.
           </h3>
           <div>
             <NavLink to="/activite">

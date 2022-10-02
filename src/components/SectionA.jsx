@@ -18,8 +18,8 @@ const SectionA = () => {
         </h2>
         <h3>
           Produire sur place au Togo et fournir aux pisciculteurs togolais de
-          manière qualitative les aliments flottants nécessaires aux différentes
-          étapes de la vie des poissons.
+          manière qualitative et quantitative les aliments flottants nécessaires
+          aux différentes étapes de la vie des poissons.
         </h3>
         <div>
           <NavLink to="/contact">
