@@ -187,10 +187,36 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translate(-50%, 500%);
+    transform: translate(-50%, 50%);
 
     @include b.breakpoint("700") {
       display: none;
     }
+  }
+
+  .layer3 {
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    @include b.breakpoint("700") {
+      display: none;
+    }
+  }
+}
+
+.sectionAt {
+  grid-row: 1;
+}
+.as {
+  @include b.breakpoint("1000") {
+    grid-row: 2 !important;
   }
 }

@@ -9,6 +9,10 @@
   max-width: 1240px;
   margin: 0 auto;
 }
+@mixin width3 {
+  max-width: 740px;
+  margin: 0 auto;
+}
 
 @mixin middle {
   display: flex;

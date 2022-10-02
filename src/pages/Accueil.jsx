@@ -15,7 +15,7 @@ const Accueil = () => {
       <Hero />
       <SectionA />
       <SectionB />
-      <SectionC />
+      {/* <SectionC /> */}
       <SectionD />
       <Banner />
       <Footer />
