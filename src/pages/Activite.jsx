@@ -8,7 +8,7 @@ const Activite = () => {
   return (
     <>
       <Header />
-      <SmallHero heading={"Activités Clés"} image={"/img/nous.jpg"} />
+      <SmallHero heading={"Activités Clés"} image={"/img/actuals/head2.jpg"} />
       <ActiviteComps />
       <Footer />
     </>

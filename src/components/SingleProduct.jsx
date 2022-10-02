@@ -14,7 +14,12 @@ const SingleProduct = ({ title, desc, tags }) => {
 
   return (
     <>
-      <div className="single-product sectionAf">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="single-product sectionAf"
+      >
         <h2>{title} </h2>
         <h3 dangerouslySetInnerHTML={{ __html: desc }}></h3>
         <div className="tags">
@@ -29,7 +34,7 @@ const SingleProduct = ({ title, desc, tags }) => {
             Commander Via Whatsapp
           </button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

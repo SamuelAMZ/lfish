@@ -8,7 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
 
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@
 
   @include b.breakpoint("700") {
     height: 200px;
+    background-position: bottom;
   }
 
   .shadow {

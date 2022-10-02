@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <SmallHero heading={"Contact"} image={"/img/nous.jpg"} />
+      <SmallHero heading={"Contact"} image={"/img/actuals/head2.jpg"} />
       <ContactComps />
       <Footer />
     </>

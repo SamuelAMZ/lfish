@@ -7,7 +7,7 @@ const Partenaires = () => {
   return (
     <>
       <Header />
-      <SmallHero heading={"Partenaires"} image={"/img/nous.jpg"} />
+      <SmallHero heading={"Partenaires"} image={"/img/actuals/head1.jpg"} />
       <div className="space"></div>
       <Footer />
     </>
