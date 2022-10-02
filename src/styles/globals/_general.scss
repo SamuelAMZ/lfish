@@ -1,4 +1,6 @@
-@import "./variables";
+@use "../globals/breakpoints" as b;
+@import "../globals/variables";
+@import "../globals/mixins";
 
 * {
   padding: 0;
@@ -42,7 +44,17 @@ p {
   text-justify: inter-word;
 }
 
-// .carre {
-//   width: 600px !important;
-//   height: 500px !important;
-// }
+h3 {
+  margin-top: -1rem !important;
+
+  @include b.breakpoint("1000") {
+    margin-top: 0rem !important;
+  }
+  @include b.breakpoint("700") {
+    margin-top: 0rem !important;
+  }
+}
+
+.bottomh3 {
+  margin-top: 0 !important;
+}

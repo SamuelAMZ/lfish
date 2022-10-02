@@ -12,7 +12,7 @@ const SmallHero = ({ heading, image, desc }) => {
         transition={{ duration: 0.3 }}
       >
         <h2>{heading}</h2>
-        <h3>{desc}</h3>
+        <h3 className="bottomh3">{desc}</h3>
       </motion.div>
     </div>
   );

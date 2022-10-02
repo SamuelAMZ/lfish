@@ -16,14 +16,14 @@ const NousComps = () => {
           <h3>
             Avec une grande finesse et une attention soutenue, L’fish produit
             une large gamme d’aliments pour les poissons d’élevage.
-            <br />
-            <br />
+          </h3>
+          <h3>
             Par le travail en continue de ces hommes et de ces femmes engagés en
             son sein, L’fish se met au service des pisciculteurs Togolais pour
             combler leurs attentes en matière de nutrition des poissons à
             différents stades de vie.
-            <br />
-            <br />
+          </h3>
+          <h3>
             Couronnée par la satisfaction client, les services offerts vont au-
             delà des besoins et attentes connues pour embrasser la culture de la
             proximité, le conseil-assistance avec les différents acteurs du
