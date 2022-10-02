@@ -11,6 +11,8 @@ const SectionA = () => {
         transition={{ duration: 0.8 }}
         className="texts"
       >
+        <h4>Expertise</h4>
+        <div className="line"></div>
         <h2>
           Acteur clé dans la production des aliments pour les poissons d’élevage
         </h2>

@@ -11,7 +11,7 @@ const SectionB = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            src="./img/actuals/cereal2.jpg"
+            src="./img/actuals/cage.jpg"
             alt="cereal"
           />
           <motion.div
@@ -27,15 +27,13 @@ const SectionB = () => {
           transition={{ duration: 0.8 }}
           className="texts"
         >
-          <h4>Innovation</h4>
+          <h4>Expertise</h4>
           <div className="line"></div>
-          <h2>Recherche et développement</h2>
+          <h2>Conseil et assistance</h2>
           <h3>
-            La recherche et le développement sur les meilleures matières
-            premières et les mécanismes de durabilité sont au cœur de la
-            production d'aliments de qualité pour le bonheur des consommateurs
-            que vous êtes. Ensemble pour créer, nous opérons pour une entreprise
-            responsable et durable.
+            Dans le prolongement naturel de nos activités de provenderie et de
+            pisciculture, notre activité de conseil vise à accompagner les
+            entreprises dans la réussite de leurs activités piscicoles.
           </h3>
           <div>
             <NavLink to="/activite">

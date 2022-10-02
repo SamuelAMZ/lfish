@@ -27,10 +27,7 @@ const Hero = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <h2>
-          la référence pour la valeur nutritionnelle dont vos poissons ont
-          besoin
-        </h2>
+        <h2>Tellement bon, même les poissons le confirment</h2>
       </motion.div>
       <NavLink to="/nous">
         <motion.button
