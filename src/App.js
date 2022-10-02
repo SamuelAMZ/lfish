@@ -5,6 +5,7 @@ import Nous from "./pages/Nous";
 import Contact from "./pages/Contact";
 import Activite from "./pages/Activite";
 import Partenaires from "./pages/Partenaires";
+import Produits from "./pages/Produits";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/" element={<Accueil />} />
         <Route path="/nous" element={<Nous />} />
         <Route exact path="/activite" element={<Activite />} />
+        <Route exact path="/produits" element={<Produits />} />
         <Route path="/partenaires" element={<Partenaires />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
