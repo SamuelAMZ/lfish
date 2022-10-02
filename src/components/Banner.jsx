@@ -12,24 +12,24 @@ const Banner = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}
       >
-        Avez-vous une question ?
+        Découvrez notre gamme d'aliment Tilapia Silure Carpe
       </motion.h2>
       <motion.h3
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        Les résultats de la survie et de la croissance dépendent directement de
-        la qualité de l'alimentation
+        La croissance de vos poissons dépendent pour beaucoup d'une alimentation
+        équilibrée et saine.
       </motion.h3>
       <div>
-        <NavLink to="/contact">
+        <NavLink to="/produits">
           <motion.button
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            Nous contacter
+            Nos Produits
           </motion.button>
         </NavLink>
       </div>
