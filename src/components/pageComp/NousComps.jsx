@@ -72,15 +72,24 @@ const NousComps = () => {
             transition={{ duration: 0.8 }}
             className="texts"
           >
-            <h2>Vision</h2>
+            <h2>Notre Vision</h2>
             <div className="line2"></div>
             <h3>
-              À l'échelle mondiale, l'aquaculture fait état d'une croissance
-              considérable. L'fish veille à ce que les pisciculteurs togolais
-              puissent assurer un élevage de poisson à la fois éfficace et
-              responsable. Ensemble, nous contribuons de manière durable à la
-              production alimentaire requise pour une population en pleine
-              croissance.
+              Etre un acteur incontournable œuvrant à l’atteinte des besoins et
+              attentes des différents acteurs de la pisciculture.
+            </h3>
+            <h3>
+              L’fish se veut être une combinaison bien pensée et visant la
+              réussite assurée à travers des stratégies et des procédés assurant
+              la disponibilité d’une nutrition et d’une alimentation de qualité
+              pour les poissons d’élevage, donc des protéines animales pour une
+              population sans cesse grandissante.
+            </h3>
+            <h3>
+              Ainsi, nous menons une action forte contre les problèmes de
+              surpêche, de faim, de malnutrition des plus vulnérables, de
+              pauvreté, dans l’atteinte des Objectifs de Développement Durable
+              (ODD) dans nos pays en pleine réforme et en pleine croissance.
             </h3>
           </motion.div>
         </div>

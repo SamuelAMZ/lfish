@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { BsCheckLg } from "react-icons/bs";
 
-const SingleProduct = ({ title, desc, tags }) => {
+const SingleProduct = ({ title, desc, points, tags }) => {
   const handleCommands = (e) => {
     // generate commande number
     let cmdNum = Math.floor(Math.random() * 90000);
@@ -20,8 +21,21 @@ const SingleProduct = ({ title, desc, tags }) => {
         transition={{ duration: 0.8 }}
         className="single-product sectionAf"
       >
-        <h2>{title} </h2>
-        <h3 dangerouslySetInnerHTML={{ __html: desc }}></h3>
+        <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>
+        <h3 className="poin" dangerouslySetInnerHTML={{ __html: desc }}></h3>
+        <div className="points">
+          <ul>
+            {points.map((item, idx) => (
+              <li>
+                <BsCheckLg className="icons" />
+                <span
+                  key={idx}
+                  dangerouslySetInnerHTML={{ __html: item }}
+                ></span>
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className="tags">
           <ul>
             {tags.map((item, idx) => (

@@ -25,15 +25,15 @@ const ContactComps = () => {
         </div>
         <div className="actual-info">
           <div className="item">
-            <a href="tel:+22891789074">
+            <a href="tel:+22892240070">
               <MdOutlinePhone />
-              <p>+228 91 78 90 74</p>
+              <p>+228 92 24 00 70</p>
             </a>
           </div>
           <div className="item">
-            <a href="https://api.WhatsApp.com/send?phone=+22891789074&text=Bonjour L'fish, je vous contacte depuis votre site web.">
+            <a href="https://api.WhatsApp.com/send?phone=+22892240070&text=Bonjour L'fish, je vous contacte depuis votre site web.">
               <BsWhatsapp />
-              <p>+228 91 78 90 74</p>
+              <p>+228 92 24 00 70</p>
             </a>
           </div>
           <div className="item">

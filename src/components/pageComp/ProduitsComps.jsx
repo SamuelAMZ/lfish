@@ -4,12 +4,16 @@ import ProductMessage from "../ProductMessage";
 
 const products = [
   {
-    title: "Gamme 'PM-Til' pour les poissons Tilapia",
-    desc: "Cette gamme d’aliments peut s’utiliser dans les élevages intensifs qu’extensitfs. <br> Selon le stade vie de votre poisson, L’fish vous offre des aliments Nourrissant, Energisants et Digestibles (NED)",
+    title: "Gamme <span>PM-Til</span> pour les poissons Tilapia",
+    desc: "Cette gamme d’aliments peut s’utiliser dans les élevages intensifs que semi-intensifs. <br> Selon le stade vie de votre poisson, L’fish vous offre: ",
+    points: [
+      "Des aliments <b>NOURRISSANT</b>",
+      "des aliments fournissant de <b>L'ÉNERGIE</b>",
+      "Des aliments agréablement <b>DIGESTIBLE</b>",
+    ],
     tags: [
       "Aliments pour alevins",
-      "Aliments pour fingerling/juvéniles",
-      "Aliments pour adultes",
+      "Aliments pour fingerling/juvéniles/adultes",
       "Spécial aliment Géniteurs",
     ],
   },
@@ -23,6 +27,7 @@ const ProduitsComps = () => {
           key={idx}
           title={item.title}
           desc={item.desc}
+          points={item.points}
           tags={item.tags}
         />
       ))}

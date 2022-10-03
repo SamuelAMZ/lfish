@@ -3,6 +3,37 @@
 @import "../globals/mixins";
 
 .single-product {
+  .points {
+    margin: 0 0 2rem 0;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+
+      li {
+        list-style: none;
+        font-size: 17px;
+        color: black;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+
+        @include b.breakpoint("1000") {
+          font-size: 16px;
+        }
+        @include b.breakpoint("700") {
+          font-size: 14px;
+        }
+
+        .icons {
+          fill: $primary;
+        }
+      }
+    }
+  }
+
   .tags {
     ul {
       display: flex;

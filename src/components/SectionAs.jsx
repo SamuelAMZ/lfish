@@ -32,8 +32,8 @@ const SectionAs = () => {
           <h3>
             Le contrôle qualité des aliments produits est primordial et se fait
             chez nous et chez des laboratoires de référence au Togo. Il commence
-            dès le choix des matières premières, leurs réception, et stockage,
-            leur transformation jusqu’au produits finis analysés et livrés.
+            dès le choix des matières premières, leur réception, et stockage,
+            leur transformation jusqu’aux produits finis analysés et livrés.
           </h3>
           <div>
             <NavLink to="/contact">
