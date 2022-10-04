@@ -18,10 +18,14 @@ const SectionD = () => {
           La recherche et le développement sur les meilleures matières premières
           et les mécanismes de durabilité sont au cœur de la production
           d'aliments de qualité pour le bonheur des consommateurs que vous êtes.
+          <br></br>
+          <br></br>
           L'fish mets l'amélioration continue au centre d'une production
           responsable et durable. Travaillons donc ensemble pour booster la
           sécurité alimentaire et garantir un bel avenir pour les générations
           futures.
+          <br></br>
+          <br></br>
         </h3>
         <div>
           <NavLink to="/contact">
