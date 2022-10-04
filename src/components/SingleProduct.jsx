@@ -9,7 +9,7 @@ const SingleProduct = ({ title, desc, points, tags }) => {
     // send cmd
     const proName = e.target.parentElement.parentElement.children[0].innerText;
     window.location.replace(
-      `https://api.WhatsApp.com/send?phone=+22891789074&text=Numero De Commande: ${cmdNum} -- Produit: ${proName} `
+      `https://api.WhatsApp.com/send?phone=+22892240070&text=Numero De Commande: ${cmdNum} -- Produit: ${proName} `
     );
   };
 
