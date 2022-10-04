@@ -24,7 +24,7 @@ const NousComps = () => {
             différents stades de vie.
           </h3>
           <h3>
-            Couronnée par la satisfaction client, les services offerts vont au-
+            Couronnés par la satisfaction client, les services offerts vont au-
             delà des besoins et attentes connues pour embrasser la culture de la
             proximité, le conseil-assistance avec les différents acteurs du
             monde de la pisciculture qui le souhaiteraient.

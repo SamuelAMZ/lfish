@@ -5,12 +5,16 @@
 .banner {
   background-color: #9fc7aa;
   @include middle;
-  gap: 1rem;
+  gap: 2rem;
   padding: 6rem 0;
   margin: 0 auto;
   border-radius: 15px;
   position: relative;
   text-align: center;
+
+  @include b.breakpoint("1000") {
+    gap: 1rem;
+  }
 
   h2 {
     font-size: 35px;

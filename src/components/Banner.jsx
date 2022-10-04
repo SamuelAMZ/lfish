@@ -19,7 +19,7 @@ const Banner = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        La croissance de vos poissons dépendent pour beaucoup d'une alimentation
+        La croissance de vos poissons dépend essentiellement d'une alimentation
         équilibrée et saine.
       </motion.h3>
       <div>

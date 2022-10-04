@@ -58,3 +58,7 @@ h3 {
 .bottomh3 {
   margin-top: 0 !important;
 }
+
+.af-button {
+  @include button;
+}

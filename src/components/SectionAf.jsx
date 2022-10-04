@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const SectionAf = ({ text }) => {
   return (
@@ -12,6 +13,12 @@ const SectionAf = ({ text }) => {
       <h2>{text.heading}</h2>
       <div className="line"></div>
       <h3 dangerouslySetInnerHTML={{ __html: text.body }}></h3>
+
+      <div>
+        <NavLink to="/contact">
+          <button className="af-button">Contactez-nous</button>
+        </NavLink>
+      </div>
     </motion.div>
   );
 };
