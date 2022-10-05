@@ -24,9 +24,9 @@ const NousComps = () => {
             différents stades de vie.
           </h3>
           <h3>
-            Couronnés par la satisfaction client, les services offerts vont au-
-            delà des besoins et attentes connues pour embrasser la culture de la
-            proximité, le conseil-assistance avec les différents acteurs du
+            Couronnés par la satisfaction client, les services offerts vont
+            au-delà des besoins et attentes connues pour embrasser la culture de
+            la proximité, le conseil-assistance avec les différents acteurs du
             monde de la pisciculture qui le souhaiteraient.
           </h3>
         </motion.div>
@@ -89,7 +89,7 @@ const NousComps = () => {
               Ainsi, nous menons une action forte contre les problèmes de
               surpêche, de faim, de malnutrition des plus vulnérables, de
               pauvreté, dans l’atteinte des Objectifs de Développement Durable
-              (ODD) dans nos pays en pleine réforme et en pleine croissance.
+              ODD dans nos pays en pleine réforme et en pleine croissance.
             </h3>
           </motion.div>
         </div>

@@ -15,8 +15,8 @@ const Footer = () => {
         <div className="first">
           <img src="./img/logo.png" alt="lfish logo" />
           <p>
-            Nous somme une compagnie Togolaise créative et innovante de
-            production
+            Nous sommes une compagnie Togolaise créative et innovante de
+            production d' aliments pour les poissons d’élevage
           </p>
           <div className="socials">
             <FaFacebookF />
