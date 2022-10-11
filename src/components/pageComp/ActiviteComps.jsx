@@ -11,7 +11,7 @@ const textA = {
 
 const textB = {
   heading: "Recherche et developpement chez L'fish",
-  body: "Notre pays, essentiellement agricole offre une variété de produits et de sous-produits regorgeant de valeurs nutritives utiles pour l’alimentation de différents types de poisson d’élevage tels que le tilapia, le poisson-chat africain et la carpe... <br><br>La recherche et le développement sur les matières premières et les mécanismes de durabilité sont au cœur de la production d’aliments de qualité chez L’fish, pour le bonheur des consommateurs que vous êtes ! <br><br>Ensemble pour créer un monde meilleur où la faim (ODD 2), la malnutrition, la surpêche n’ont plus leur place, nous devrons œuvrer dans l’innovation pour rendre nos entreprises responsables et durables. <br><br> <b>CONTACTEZ-NOUS SI VOUS VOULEZ FAIRE PARTIE DE CETTE MERVEILLEUSE AVENTURE. </b>",
+  body: "Notre pays, essentiellement agricole offre une variété de produits et de sous-produits regorgeant de valeurs nutritives utiles pour l’alimentation de différents types de poisson d’élevage tels que le tilapia, le poisson-chat africain et la carpe... <br><br>La recherche et le développement sur les matières premières et les mécanismes de durabilité sont au cœur de la production d’aliments de qualité chez L’fish, pour le bonheur des consommateurs que vous êtes ! <br><br>Ensemble pour créer un monde meilleur où la faim ODD 2, la malnutrition, la surpêche n’ont plus leur place, nous devrons œuvrer dans l’innovation pour rendre nos entreprises responsables et durables. <br><br> <b>CONTACTEZ-NOUS SI VOUS VOULEZ FAIRE PARTIE DE CETTE MERVEILLEUSE AVENTURE. </b>",
 };
 
 const ActiviteComps = () => {
