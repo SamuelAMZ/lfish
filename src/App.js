@@ -6,6 +6,8 @@ import Contact from "./pages/Contact";
 import Activite from "./pages/Activite";
 import Partenaires from "./pages/Partenaires";
 import Produits from "./pages/Produits";
+import Apps from "./pages/Apps";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route exact path="/produits" element={<Produits />} />
         <Route path="/partenaires" element={<Partenaires />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/apps" element={<Apps />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
