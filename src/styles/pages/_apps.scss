@@ -63,9 +63,13 @@
       background-color: $primary;
       color: white;
     }
+    &:hover .icon {
+      border-color: white !important;
+    }
 
     .icon {
       font-size: 40px;
+
       @include b.breakpoint("500") {
         font-size: 35px;
       }
